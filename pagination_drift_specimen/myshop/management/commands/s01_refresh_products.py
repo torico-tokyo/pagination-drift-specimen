@@ -14,7 +14,7 @@ def make_product_name(i):
 
 
 class Command(BaseCommand):
-    help = 'ダミー Product を10000個作成'
+    help = 'ダミー Product を10000個作成する。すでにあれば消す。'
 
     def handle(self, *args, **options):
         Product.objects.all().delete()
