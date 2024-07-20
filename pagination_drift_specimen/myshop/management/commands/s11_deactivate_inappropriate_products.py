@@ -6,6 +6,8 @@ from ...models import Product
 class Command(BaseCommand):
     """
     name に「不適切」が含まれる Product の active を False にする。
+
+    このコードには、パジネーションドリフトの不具合が含まれている。
     """
     help = 'name に「不適切」が含まれる Product の active を False にする'
 
